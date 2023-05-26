@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>D-ID Streaming POC</title>
+  <!-- added google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Mulish', sans-serif;
+    }
+    .peerConnectionState-new {
+      color: cornflowerblue;
+    }
+    .peerConnectionState-connecting {
+      color: orange;
+    }
+    .peerConnectionState-connected {
+      color: green;
+    }
+    .peerConnectionState-disconnected,
+    .peerConnectionState-closed,
+    .peerConnectionState-failed {
+      color: red;
+    }
+    .iceConnectionState-new {
+      color: cornflowerblue;
+    }
+    .iceConnectionState-checking {
+      color: orange;
+    }
+    .iceConnectionState-connected,
+    .iceConnectionState-completed {
+      color: green;
+    }
+    .iceConnectionState-disconnected,
+    .iceConnectionState-closed,
+    .iceConnectionState-failed {
+      color: red;
+    }
+    .iceGatheringState-new {
+      color: cornflowerblue;
+    }
+    .iceGatheringState-gathering {
+      color: orange;
+    }
+    .iceGatheringState-complete {
+      color: black;
+    }
+    .signalingState-stable {
+      color: green;
+    }
+    .signalingState-have-local-offer,
+    .signalingState-have-remote-offer,
+    .signalingState-have-local-pranswer,
+    .signalingState-have-remote-pranswer {
+      color: cornflowerblue;
+    }
+    .signalingState-closed {
+      color: red;
+    }
+
+    /* added css from here */
+
+    body *{
+      font-family: 'Mulish', sans-serif;
+      text-align: center;
+    }
+
+    #content {
+      width:820px;
+      position: relative;
+      margin:0 auto; 
+    }
+    #buttons {
+      clear:both;
+      padding:0 0 0 0;
+      text-align: center;
+    }
+    button {
+      padding:10px 20px;
+      border-radius: 5px;
+      border:none;
+      font-size: 16px;
+      margin:0 5px;
+      background-color: #424242;
+      color: #ffffff;
+    }
+    button:hover {
+      background-color: #616161;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+    }
+    #status {
+      clear:both;
+      padding:20px 0 0 0 ;
+      text-align: left;
+      display: inline-block;
+      zoom: 1;
+      line-height: 140%;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    #status div {
+      padding-bottom: 10px;
+    }
+    #video-wrapper {
+      background: #121212 url(bg.png);
+      height:500px;
+      background-position: top;
+    }
+    #video-wrapper div {
+      width:400px;
+      margin:0 auto;
+      padding:50px 0 0 0;
+    }
+    video {
+      display:block;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <div id="video-wrapper">
+      <div>
+        <video id="talk-video" width=400 height=400 autoplay></video>
+      </div>
+    </div>
+    <br>
+    <div id="input-container">
+      <input type="text" id="user-input-field" placeholder="Enter your message...">
+      <hr> <!-- Add a horizontal rule -->
+    </div>
+    <div id="buttons">
+      <button id="connect-button" type="button">Connect</button>
+      <button id="talk-button" type="button">Start</button>
+      <button id="destroy-button" type="button">Destroy</button>
+    </div>
+    <div id="status">
+      <table style="width: fit-content; margin: 0 auto; text-align: right; color: #ffffff;">
+        <tr>
+          <td>ICE gathering status:</td>
+          <td><label id="ice-gathering-status-label">complete</label></td>
+        </tr>
+        <tr>
+          <td style="padding-left: 40px;">ICE status:</td>
+          <td><label id="ice-status-label">connected</label></td>
+        </tr>
+        <tr>
+          <td style="padding-left: 40px;">Peer connection status:</td>
+          <td><label id="peer-status-label">connected</label></td>
+        </tr>
+        <tr>
+          <td style="padding-left: 40px;">Signaling status:</td>
+          <td><label id="signaling-status-label">stable</label></td>
+        </tr>
+      </table>
+    </div>
+  </div>  
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
