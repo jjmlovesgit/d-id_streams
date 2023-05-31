@@ -11,11 +11,11 @@
 * You should see this message - Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 * (open the app) in the browser add localhost:8000
 * http://localhost:8000/index.html
-* Enter Text to Send for Processing 10 words = 1 credit -- keep it short :)
+* Enter Text to Send for Processing 15 words = 1 credit -- keep it short :)
 * (connect) press connect you should see the connection ready 
 * (stream) press the start button to start streaming
-* Give it a sec and it strats talking!
-* Repest - be aware it is fun and you will run out of credits
+* Give it a sec and it starts talking!
+* Be aware it is fun and you will run out of credits if you create a lot of video feedback 
 
 ## Note:
 change the line 34 in streaming-client-api.js to cusomize the avitar to your image 
