@@ -1,4 +1,8 @@
 # Streaming Live Demo by D-ID and modified by JJM
+https://youtu.be/5X_sse80arc
+#
+![image](https://github.com/jjmlovesgit/d-id_streams/assets/47751509/7dffefaf-7c4b-4556-b88e-d383e5a0b72b)
+
 
 ## Initial Setup:
 * (install express) open a terminal in the folder and run  - npm install express
