@@ -1,7 +1,7 @@
 # Streaming Live Demo by D-ID and modified by JJM
-https://youtu.be/5X_sse80arc
+[https://youtu.be/5X_sse80arc](https://youtu.be/JUYIZD-p2w8)
 #
-![image](https://github.com/jjmlovesgit/d-id_streams/assets/47751509/7dffefaf-7c4b-4556-b88e-d383e5a0b72b)
+![image](https://github.com/jjmlovesgit/d-id_streams/assets/47751509/1706072d-19cb-44a3-865e-2657ace373df)
 
 
 ## Initial Setup:
