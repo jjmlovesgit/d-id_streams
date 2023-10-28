@@ -1,3 +1,4 @@
+# 10/27/23  Update -- I did the integration of the streaming avatar with ChatGPT:  https://github.com/jjmlovesgit/D-id_Streaming_Chatgpt
 # Streaming Live Demo by D-ID and modified by JJM
 [https://youtu.be/5X_sse80arc](https://youtu.be/JUYIZD-p2w8)
 #
